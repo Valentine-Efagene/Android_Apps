@@ -6,6 +6,7 @@ import androidx.appcompat.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
+import android.widget.EditText;
 import android.widget.TextView;
 import android.widget.Toast;
 
@@ -27,6 +28,7 @@ public class MainActivity extends AppCompatActivity {
     private Button readButton;
     private Button updateButton;
     private Button deleteButton;
+    private EditText messageEditText;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -39,6 +41,7 @@ public class MainActivity extends AppCompatActivity {
         readButton = findViewById(R.id.readButton);
         updateButton = findViewById(R.id.updateButton);
         deleteButton = findViewById(R.id.deleteButton);
+        messageEditText = findViewById(R.id.messageEditText);
 
         // Read from the database
         myRef.addValueEventListener(new ValueEventListener() {
@@ -112,7 +115,7 @@ public class MainActivity extends AppCompatActivity {
                         DataSnapshot nodeShot = dataSnapshot.getChildren().iterator().next();
                         String key = nodeShot.getKey();
                         HashMap<String, Object> update = new HashMap<>();
-                        update.put("portfolioOwner", "New Owner");
+                        update.put("portfolioOwner", messageEditText.getText().toString());
                         myRef.child(key).updateChildren(update);
                     }
                     @Override
@@ -134,7 +137,7 @@ public class MainActivity extends AppCompatActivity {
                         String key = nodeShot.getKey();
                         myRef.child(key).removeValue();
                     }
-                    
+
                     @Override
                     public void onCancelled(DatabaseError databaseError) {
                     }

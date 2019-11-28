@@ -18,7 +18,7 @@
         android:background="@drawable/bg_elevated_rounded_edge_layout">
 
         <EditText
-            android:id="@+id/messageEditTExt"
+            android:id="@+id/messageEditText"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:inputType="text"
@@ -60,6 +60,8 @@
     <LinearLayout
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginTop="100dp"
+        android:gravity="center_horizontal"
         android:orientation="horizontal">
 
         <Button
@@ -89,6 +91,7 @@
     <LinearLayout
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
         android:orientation="horizontal">
 
         <Button
