@@ -1,0 +1,4 @@
+<resources>
+    <string name="app_name">DownloadFirebaseFile</string>
+    <string name="download">Download</string>
+</resources>

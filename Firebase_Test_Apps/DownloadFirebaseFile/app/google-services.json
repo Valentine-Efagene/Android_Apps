@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "624550060954",
+    "firebase_url": "https://downloadfirebasefile.firebaseio.com",
+    "project_id": "downloadfirebasefile",
+    "storage_bucket": "downloadfirebasefile.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:624550060954:android:dd7935fe1b18f968fd1023",
+        "android_client_info": {
+          "package_name": "com.example.downloadfirebasefile"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "624550060954-ndb49ko3bhkjov9ju7hgf97dhc9bp6qi.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.downloadfirebasefile",
+            "certificate_hash": "bf8c04eafdc7e159020e9f2c30caabbc4185dd8f"
+          }
+        },
+        {
+          "client_id": "624550060954-duf4roelfm6fpf576msfguno21730tkq.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDxI54mxTbN6MysKhIjgvLHntMnCecErYc"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "624550060954-duf4roelfm6fpf576msfguno21730tkq.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
